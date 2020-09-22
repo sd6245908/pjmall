@@ -1,1 +1,1 @@
-# pjmall-server
+# pjmall
