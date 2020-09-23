@@ -15,10 +15,10 @@
     "validateDefaultErrno": 1001,
     "default_module": "api",
     "weixin": {
-      "appid": "wx7af111110000000",
-      "secret": "cb8e5adce569f9bddce5b8123123e1115aaddce505",
-      "mch_id": "15988888888",
-      "partner_key": "asdasdasdasdasdasdasd",
+      "appid": "wxe9d1d386f43f7893",
+      "secret": "8d4de73a3b818187f620ef7cda23dc01",
+      "mch_id": "1602880025",
+      "partner_key": "Pjyp2020010120201231abcdefghijkl",
       "notify_url": "https://www.您的域名.com/api/pay/notify"
     },
     "express": {
