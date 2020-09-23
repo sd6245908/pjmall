@@ -79,10 +79,10 @@ module.exports = class extends think.Service {
     return _asyncToGenerator(function*() {
       const WeiXinPay = require("weixinpay");
       const weixinpay = new WeiXinPay({
-        appid: "wxe9d1d386f43f7893", // 微信小程序appid
+        appid: think.config("weixin.appid"), // 微信小程序appid
         openid: payInfo.openid, // 用户openid
-        mch_id: "1602880025", // 商户帐号ID
-        partner_key: "Pjyp2020010120201231abcdefghijkl" // 秘钥
+        mch_id: think.config("weixin.mch_id"), // 商户帐号ID
+        partner_key: think.config("weixin.partner_key") // 秘钥
       });
       return new Promise(function(resolve, reject) {
         // let total_fee = this.getTotalFee(payInfo.out_trade_no);

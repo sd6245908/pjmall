@@ -115,31 +115,27 @@ module.exports = class extends Base {
         })
         .getField("weixin_openid", true);
       if (think.isEmpty(openid)) {
-        return _this2.fail(400, "微信支付失败?:openid is enpty");
+        return _this2.fail(400, "微信支付失败?");
       }
       const WeixinSerivce = _this2.service("weixin", "api");
+      think.config("weixin.appid");
       try {
         const returnParams = yield WeixinSerivce.createUnifiedOrder({
           openid: openid,
-          body: "body",
-          out_trade_no: "trade_no",
-          total_fee: parseInt(orderInfo.actual_price * 100)
-          // spbill_create_ip: ""
+          body: "[pjyp]:" + orderInfo.order_sn,
+          out_trade_no: orderInfo.order_sn,
+          total_fee: parseInt(orderInfo.actual_price * 100),
+          spbill_create_ip: ""
         });
         return _this2.success(returnParams);
       } catch (err) {
         return _this2.fail(
           400,
           "微信支付失败?" +
-            JSON.stringify(err) +
-            "--" +
-            JSON.stringify(openid) +
-            "--" +
-            JSON.stringify(orderInfo.order_sn) +
-            "--" +
-            JSON.stringify(orderInfo.order_sn) +
-            "--" +
-            JSON.stringify(parseInt(orderInfo.actual_price * 100))
+            think.config("weixin.appid") +
+            think.config("weixin.mch_id") +
+            think.config("weixin.secret") +
+            think.config("weixin.partner_key")
         );
       }
     })();
