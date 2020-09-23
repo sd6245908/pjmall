@@ -128,7 +128,19 @@ module.exports = class extends Base {
         });
         return _this2.success(returnParams);
       } catch (err) {
-        return _this2.fail(400, "微信支付失败?" + JSON.stringify(err));
+        return _this2.fail(
+          400,
+          "微信支付失败?" +
+            JSON.stringify(err) +
+            "--" +
+            JSON.stringify(openid) +
+            "--" +
+            JSON.stringify(orderInfo.order_sn) +
+            "--" +
+            JSON.stringify(orderInfo.order_sn) +
+            "--" +
+            JSON.stringify(parseInt(orderInfo.actual_price * 100))
+        );
       }
     })();
   }
