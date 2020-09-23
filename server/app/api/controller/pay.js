@@ -121,10 +121,10 @@ module.exports = class extends Base {
       try {
         const returnParams = yield WeixinSerivce.createUnifiedOrder({
           openid: openid,
-          body: "[pjyp]:" + orderInfo.order_sn,
-          out_trade_no: orderInfo.order_sn,
-          total_fee: parseInt(orderInfo.actual_price * 100),
-          spbill_create_ip: ""
+          body: orderInfo.order_sn,
+          out_trade_no: new Date().getTime() + "",
+          total_fee: parseInt(orderInfo.actual_price * 100)
+          // spbill_create_ip: ""
         });
         return _this2.success(returnParams);
       } catch (err) {
