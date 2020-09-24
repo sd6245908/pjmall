@@ -6,7 +6,7 @@ module.exports = {
     secret: "8d4de73a3b818187f620ef7cda23dc01", // 小程序密钥
     mch_id: "1602880025", // 商户帐号ID
     partner_key: "Pjyp2020010120201231abcdefghijkl", // 微信支付密钥
-    notify_url: "https://www.您的域名.com/api/pay/notify" // 微信支付异步通知
+    notify_url: "http://api.pj-mall.cn/api/pay/notify" // 微信支付异步通知
   },
   express: {
     // 已废弃，之后考虑改回来，做成和阿里云的物流查询可以切换，方便大家的使用
@@ -20,10 +20,15 @@ module.exports = {
     appid: "123123", // 对应快递鸟用户后台 用户ID
     appkey: "123123-4e61236-94cb5297309a", // 对应快递鸟用户后台 API key
     request_url: "http://testapi.kdniao.com:8081/api/EOrderService",
-    print_url:
-      "http://sandboxapi.kdniao.com:8080/kdniaosandbox/gateway/exterfaceInvoke.json",
+    print_url: "http://sandboxapi.kdniao.com:8080/kdniaosandbox/gateway/exterfaceInvoke.json",
     ip_server_url: "http://www.kdniao.com/External/GetIp.aspx"
   },
+  // qiniu: {
+  //   access_key: "asdlakjsdlajlajsdlas", // 在七牛密钥管理中获取
+  //   secret_key: "alskdjalksjdlasjdlajsd", // 在七牛密钥管理中获取
+  //   bucket: "bucketname", // 请填自己的bucket的名称
+  //   domain: "domain/" // 请填自己的domain域名
+  // },
   qiniu: {
     token: "pjyp7ujm6yhnP",
     domain: "https://bucket.pj-mall.cn/"

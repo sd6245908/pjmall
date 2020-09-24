@@ -6,7 +6,7 @@ module.exports = {
     secret: "8d4de73a3b818187f620ef7cda23dc01", // 小程序密钥
     mch_id: "1602880025", // 商户帐号ID
     partner_key: "Pjyp2020010120201231abcdefghijkl", // 微信支付密钥
-    notify_url: "https://www.您的域名.com/api/pay/notify" // 微信支付异步通知
+    notify_url: "http://api.pj-mall.cn/api/pay/notify" // 微信支付异步通知
   },
   express: {
     // 已废弃，之后考虑改回来，做成和阿里云的物流查询可以切换，方便大家的使用
