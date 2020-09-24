@@ -1,6 +1,6 @@
 {
-  "name": "hioshop",
-  "description": "hioshop - open source mini program shop",
+  "name": "pjyp",
+  "description": "PJYP Mini program shop",
   "version": "1.0.0",
   "scripts": {
     "start": "node development.js",
