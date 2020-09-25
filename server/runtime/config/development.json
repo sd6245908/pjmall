@@ -42,7 +42,7 @@
       "secret_key": "aaaaaaaaaaasdasdasdasd",
       "bucket": "bucketname",
       "domain": "domain/",
-      "zoneNum": 0
+      "zoneNum": 1
     },
     "aliexpress": {
       "url": "http://wuliu.market.alicloudapi.com/kdi",
@@ -64,13 +64,13 @@
       "mysql": {
         "logConnect": true,
         "logSql": true,
-        "database": "hiolabsDB",
+        "database": "hiolabs",
         "prefix": "hiolabs_",
         "encoding": "utf8mb4",
-        "host": "152.136.106.81",
+        "host": "127.0.0.1",
         "port": "3306",
-        "user": "pj_mall",
-        "password": "7ujm6yhnP",
+        "user": "root",
+        "password": "123456",
         "dateStrings": true
       }
     },
@@ -144,7 +144,7 @@
       "secret_key": "aaaaaaaaaaasdasdasdasd",
       "bucket": "bucketname",
       "domain": "domain/",
-      "zoneNum": 0
+      "zoneNum": 1
     },
     "aliexpress": {
       "url": "http://wuliu.market.alicloudapi.com/kdi",
@@ -184,13 +184,13 @@
       "mysql": {
         "logConnect": true,
         "logSql": true,
-        "database": "hiolabsDB",
+        "database": "hiolabs",
         "prefix": "hiolabs_",
         "encoding": "utf8mb4",
-        "host": "152.136.106.81",
+        "host": "127.0.0.1",
         "port": "3306",
-        "user": "pj_mall",
-        "password": "7ujm6yhnP",
+        "user": "root",
+        "password": "123456",
         "dateStrings": true
       }
     },
@@ -264,7 +264,7 @@
       "secret_key": "aaaaaaaaaaasdasdasdasd",
       "bucket": "bucketname",
       "domain": "domain/",
-      "zoneNum": 0
+      "zoneNum": 1
     },
     "aliexpress": {
       "url": "http://wuliu.market.alicloudapi.com/kdi",
@@ -286,13 +286,13 @@
       "mysql": {
         "logConnect": true,
         "logSql": true,
-        "database": "hiolabsDB",
+        "database": "hiolabs",
         "prefix": "hiolabs_",
         "encoding": "utf8mb4",
-        "host": "152.136.106.81",
+        "host": "127.0.0.1",
         "port": "3306",
-        "user": "pj_mall",
-        "password": "7ujm6yhnP",
+        "user": "root",
+        "password": "123456",
         "dateStrings": true
       }
     },
